@@ -1,0 +1,7 @@
+{
+  "name": "ionic-vue-vuefire-firestore-crud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
