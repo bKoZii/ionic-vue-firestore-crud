@@ -41,7 +41,7 @@
       <ion-toggle v-model="editedMember.isVerified">Verified? </ion-toggle>
     </ion-item>
     <ion-button expand="block" class="ion-margin-top" @click="updateData()"
-      :disabled="isMemberUnchanged">บันทึก</ion-button>
+      :disabled="isMemberUnchanged">Save</ion-button>
 
     <ion-modal :keep-contents-mounted="true">
       <ion-datetime v-model="editedMember.birthday" id="datetime" presentation="date" :first-day-of-week="1"
