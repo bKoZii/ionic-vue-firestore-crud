@@ -7,11 +7,23 @@ Simple Firestore CRUD Web Application Made by Ionic 7 with Vue.js 3, VueFire
 ## Todos
 
 - [x] CRUD Function
-- [ ] Form  Validations
+- [ ] Form Validations
+
+## Screenshots
+
+|    |    |
+|:-------:|:-------:|
+| ![AddMember](/github/addMember.png) | ![MemberList](/github/memberList.png) |
+| Add Member Form | Member List |
+
+|    |    |
+|:-------:|:-------:|
+| ![MemberDetails](/github/memberDetail.png) | ![Edit Member](/github/editMember.png) |
+| Member Details | Member Editing |
 
 ## How to run
 
 1. Install the Ionic CLI `npm install -g @ionic/cli`
-2. Clone this repository `git clone https://github.com/bKoZii/cloud-konkamon-ionic-vue`
+2. Clone this repository `git clone https://github.com/bKoZii/ionic-vue-vuefire-firestore-crud`
 3. Run `npm install` in this Project Folder
 4. Run `ionic serve` in this Project Folder
