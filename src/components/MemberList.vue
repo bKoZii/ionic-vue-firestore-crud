@@ -4,7 +4,7 @@
       <ion-item @click="openModal(memberDetailModal, data)">
         <ion-label>{{
           data.title + ' ' + data.fName + ' ' + data.lName
-        }}</ion-label>
+          }}</ion-label>
         <ion-icon v-if="data.isVerified == true" :icon="checkmarkCircle" slot="end" color="primary"></ion-icon>
         <ion-icon v-else :icon="alertCircle" slot="end" color="warning"></ion-icon>
       </ion-item>
@@ -15,9 +15,6 @@
             :icon="trashBin"></ion-icon></ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
-  </div>
-  <div v-else>
-    <ion-label>No Data Yet, Try Adding Some Now!</ion-label>
   </div>
 </template>
 <script setup lang="ts">
