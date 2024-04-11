@@ -24,6 +24,6 @@ Simple Firestore CRUD Web Application Made by Ionic 7 with Vue.js 3, VueFire
 ## How to run
 
 1. Install the Ionic CLI `npm install -g @ionic/cli`
-2. Clone this repository `git clone https://github.com/bKoZii/ionic-vue-vuefire-firestore-crud`
+2. Clone this repository `git clone https://github.com/bKoZii/ionic-vue-firestore-crud`
 3. Run `npm install` in this Project Folder
 4. Run `ionic serve` in this Project Folder
