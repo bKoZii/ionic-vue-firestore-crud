@@ -72,7 +72,7 @@ import { computed, ref } from 'vue'
 import { Timestamp } from 'firebase/firestore'
 import { MemberInterface } from '@/interface/MemberInterface'
 
-const member = ref<MemberInterface>({} as unknown as MemberInterface)
+const member = ref<MemberInterface>({ isVerified: false } as MemberInterface)
 const dateToday = Timestamp.now().toDate().toISOString()
 const nameTitleOptions = {
   header: 'Your Name Title',
@@ -81,7 +81,6 @@ const nameTitleOptions = {
 
 const sendData = async () => {
   member.value.dateAdded = Timestamp.now().toMillis()
-  member.value.isVerified = false
   dialogDismiss()
 
   try {
