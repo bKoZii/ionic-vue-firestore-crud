@@ -103,15 +103,20 @@ const dialogDismiss = () => modalController.dismiss()
 const clearMember = () => {
   const clearedMember = {
     ...member.value,
-    ...Object.keys(member.value).reduce(
-      (acc, key) => ({ ...acc, [key]: '' }),
-      {}
-    ),
+    ...Object.keys(member.value).reduce((acc, key) => {
+      if (key === 'birthday') {
+        return { ...acc, [key]: dateToday }
+      } else {
+        return { ...acc, [key]: '' }
+      }
+    }, {}),
   }
   member.value = clearedMember
 }
 
 const isMemberDataEmpty = computed(() => {
-  return Object.values(member.value).every((value: any) => value.trim() === '')
+  return Object.values(member.value).every((value: any) => {
+    typeof value === 'string' ? value.trim() === '' : true
+  })
 })
 </script>
