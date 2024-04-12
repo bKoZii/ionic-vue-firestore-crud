@@ -1,12 +1,12 @@
 <template>
   <div v-if="data">
     <ion-item-sliding>
-      <ion-item @click="openModal(memberDetailModal, data)">
+      <ion-item @click="openModal(memberDetailModal, data)" button :detail=true lines="full">
         <ion-label>{{
           data.title + ' ' + data.fName + ' ' + data.lName
           }}</ion-label>
-        <ion-icon v-if="data.isVerified == true" :icon="checkmarkCircle" slot="end" color="primary"></ion-icon>
-        <ion-icon v-else :icon="alertCircle" slot="end" color="warning"></ion-icon>
+        <ion-icon v-if="data.isVerified == true" :icon="checkmarkCircle" slot="start" color="primary"></ion-icon>
+        <ion-icon v-else :icon="alertCircle" slot="start" color="warning"></ion-icon>
       </ion-item>
       <ion-item-options>
         <ion-item-option @click="openModal(editMemberModal, data)"><ion-icon
