@@ -41,7 +41,8 @@
       :disabled="!member.fName || !member.lName">Save</ion-button>
     <ion-button expand="block" :disabled="isMemberDataEmpty" fill="clear" @click="clearMember()">Reset Form</ion-button>
     <ion-modal :keep-contents-mounted="true">
-      <ion-datetime v-model="member.birthday" id="datetime" presentation="date" :first-day-of-week="1" :max="dateToday">
+      <ion-datetime v-model="member.birthday" id="datetime" presentation="date" :first-day-of-week="1" :max="dateToday"
+        :show-default-buttons="true">
         <span slot="title">Select your Birthday</span></ion-datetime>
     </ion-modal>
   </ion-content>
@@ -67,7 +68,7 @@ import {
   IonLabel,
   modalController,
 } from '@ionic/vue'
-import { close } from 'ionicons/icons'
+import { close } from 'ionicons/icons';
 import { computed, ref } from 'vue'
 import { Timestamp } from 'firebase/firestore'
 import { MemberInterface } from '@/interface/MemberInterface'
