@@ -45,7 +45,7 @@
 
     <ion-modal :keep-contents-mounted="true">
       <ion-datetime v-model="editedMember.birthday" id="datetime" presentation="date" :first-day-of-week="1"
-        :max="dateToday">
+        :max="dateToday" :show-default-buttons="true">
         <span slot="title">Select your Birthday</span></ion-datetime>
     </ion-modal>
   </ion-content>
