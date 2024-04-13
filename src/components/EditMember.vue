@@ -38,7 +38,7 @@
         label-placement="floating"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-toggle v-model="editedMember.isVerified">Verified? </ion-toggle>
+      <ion-checkbox v-model="editedMember.isVerified">Verified?</ion-checkbox>
     </ion-item>
     <ion-button expand="block" class="ion-margin-top" @click="updateData()"
       :disabled="isMemberUnchanged">Save</ion-button>
@@ -66,7 +66,7 @@ import {
   IonInput,
   IonSelect,
   IonSelectOption,
-  IonToggle,
+  IonCheckbox,
   IonModal,
   IonLabel,
   IonDatetime,
